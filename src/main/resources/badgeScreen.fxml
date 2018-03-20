@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="632.0" prefWidth="1020.0" styleClass="homePane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softeng206.tatai.controllers.BadgeController">
+   <children>
+      <VBox stylesheets="@style.css" StackPane.alignment="CENTER">
+         <children>
+            <StackPane>
+               <children>
+                  <HBox alignment="CENTER" StackPane.alignment="CENTER" />
+                  <Label fx:id="logo" alignment="CENTER" contentDisplay="CENTER" prefHeight="84.0" prefWidth="378.0" styleClass="logoTitleHome" stylesheets="@style.css" text="Tatai!" StackPane.alignment="TOP_CENTER">
+                     <StackPane.margin>
+                        <Insets bottom="8.0" />
+                     </StackPane.margin>
+                     <tooltip>
+                        <Tooltip text="Click to navigate home">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip></Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="378.0" styleClass="logoSubTitle" stylesheets="@style.css" text="Maori learning module" StackPane.alignment="BOTTOM_CENTER" />
+               </children>
+            </StackPane>
+            <StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" StackPane.alignment="CENTER">
+                     <children>
+                        <TilePane alignment="CENTER" hgap="20.0" prefColumns="3" prefRows="3" vgap="20.0">
+                           <children>
+                              <ImageView fx:id="podiumBadge" fitHeight="100.0" fitWidth="100.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@badges/podium.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="waterBadge" fitHeight="100.0" fitWidth="100.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@badges/water.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="fireBadge" fitHeight="100.0" fitWidth="100.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@badges/fire.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="medalBadge" fitHeight="100.0" fitWidth="100.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@badges/medal.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="trophyBadge" fitHeight="100.0" fitWidth="100.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@badges/trophy.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="watchBadge" fitHeight="100.0" fitWidth="100.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@badges/watch.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="okBadge" fitHeight="100.0" fitWidth="100.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@badges/ok.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="mountainBadge" fitHeight="100.0" fitWidth="100.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@badges/mountain.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="tickBadge" fitHeight="100.0" fitWidth="100.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@badges/tickBadge.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </TilePane>
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+            <StackPane>
+               <children>
+                  <Pane maxHeight="160.0" prefHeight="181.0" prefWidth="1010.0" styleClass="backWave" stylesheets="@style.css" StackPane.alignment="BOTTOM_CENTER" />
+                  <Pane maxHeight="115.0" prefHeight="164.0" prefWidth="1300.0" styleClass="frontWave" stylesheets="@style.css" StackPane.alignment="BOTTOM_CENTER" />
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+      <Pane fx:id="paneDialog" disable="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black; -fx-opacity: 0.3;" visible="false" />
+      <HBox fx:id="badgeDialog" alignment="CENTER" disable="true" maxHeight="255.0" maxWidth="634.0" prefHeight="255.0" prefWidth="634.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.15), 6, 0.0, 0, 1);;" visible="false">
+         <children>
+            <ImageView fx:id="imgDialog" fitHeight="167.0" fitWidth="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@badges/podium.png" />
+               </image>
+            </ImageView>
+            <Region prefHeight="255.0" prefWidth="58.0" />
+            <VBox prefHeight="255.0" prefWidth="324.0">
+               <children>
+                  <Label fx:id="titleDialog" prefHeight="33.0" prefWidth="299.0" styleClass="homeSelectTitles" stylesheets="@style.css" text="Badge Title">
+                     <VBox.margin>
+                        <Insets top="34.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="descriptionDialog" prefHeight="162.0" prefWidth="387.0" styleClass="badgeText" stylesheets="@style.css" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " wrapText="true" />
+               </children>
+            </VBox>
+            <ImageView fx:id="closeDialog" fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/cross.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="153.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</StackPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1008.0" styleClass="homePane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softeng206.tatai.controllers.FavouriteGamesController">
+   <children>
+      <StackPane>
+         <children>
+            <Label fx:id="logo" alignment="CENTER" contentDisplay="CENTER" styleClass="logoTitleHome" stylesheets="@style.css" text="Tatai!" StackPane.alignment="TOP_CENTER">
+               <tooltip>
+                  <Tooltip text="Click to navigate home">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+               <padding>
+                  <Insets bottom="7.0" />
+               </padding></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" styleClass="logoSubTitle" stylesheets="@style.css" text="Maori learning module" StackPane.alignment="BOTTOM_CENTER">
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </Label>
+         </children>
+      </StackPane>
+      <StackPane alignment="BOTTOM_CENTER" prefHeight="879.0" prefWidth="1008.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Pane layoutX="10.0" layoutY="294.0" maxHeight="160.0" styleClass="backWave" stylesheets="@style.css" StackPane.alignment="BOTTOM_CENTER" />
+            <VBox alignment="TOP_CENTER" StackPane.alignment="CENTER">
+               <children>
+                  <Region layoutX="10.0" layoutY="49.0" prefHeight="25.0" prefWidth="1008.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" styleClass="titleClass" stylesheets="@style.css" text="favourite games" />
+                  <Region prefHeight="22.0" prefWidth="1008.0" />
+                  <ScrollPane fitToWidth="true" hbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+                     <content>
+                        <TilePane fx:id="gamesTileBox" alignment="TOP_CENTER" hgap="20.0" prefColumns="4" prefHeight="827.0" prefRows="0" prefWidth="996.0" tileAlignment="TOP_CENTER" vgap="20.0">
+                           <padding>
+                              <Insets bottom="150.0" top="15.0" />
+                           </padding>
+                        </TilePane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <Pane maxHeight="115.0" nodeOrientation="LEFT_TO_RIGHT" styleClass="frontWave" stylesheets="@style.css" StackPane.alignment="BOTTOM_CENTER" />
+         </children>
+      </StackPane>
+   </children>
+</VBox>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane styleClass="homePane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softeng206.tatai.controllers.HelpController">
+   <children>
+      <VBox alignment="BOTTOM_CENTER" nodeOrientation="LEFT_TO_RIGHT" StackPane.alignment="BOTTOM_CENTER">
+         <children>
+            <StackPane VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="logo" alignment="CENTER" contentDisplay="CENTER" prefHeight="95.0" prefWidth="378.0" styleClass="logoTitleHome" stylesheets="@style.css" text="Tatai!" StackPane.alignment="TOP_CENTER">
+                     <tooltip>
+                        <Tooltip text="Click to navigate home">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Tooltip>
+                     </tooltip></Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="471.0" layoutY="10.0" prefHeight="35.0" prefWidth="378.0" styleClass="logoSubTitle" stylesheets="@style.css" text="Maori learning module" StackPane.alignment="TOP_CENTER">
+                     <StackPane.margin>
+                        <Insets top="99.0" />
+                     </StackPane.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="18.0" />
+               </padding>
+            </StackPane>
+            <StackPane alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+               <children>
+                  <Pane layoutX="10.0" layoutY="294.0" maxHeight="160.0" styleClass="backWave" stylesheets="@style.css" StackPane.alignment="BOTTOM_CENTER" />
+                  <ScrollPane fitToWidth="true" hbarPolicy="NEVER" StackPane.alignment="BOTTOM_CENTER">
+                     <content>
+                        <HBox alignment="CENTER" prefHeight="737.0" prefWidth="1097.0">
+                           <children>
+                              <TilePane alignment="TOP_CENTER" hgap="20.0" prefColumns="1" prefHeight="808.0" prefRows="7" prefWidth="1097.0" tileAlignment="TOP_CENTER" vgap="20.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <StackPane fx:id="helpPane1" maxWidth="500.0" prefWidth="340.0" styleClass="helpTiles" stylesheets="@style.css" TilePane.alignment="CENTER">
+                                       <children>
+                                          <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" StackPane.alignment="CENTER">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="358.0" styleClass="homeSelectTitles" stylesheets="@style.css" text="How to start a new game:" textAlignment="CENTER" />
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="264.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="learn how to start new games and change the math mode" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane fx:id="helpPane2" maxWidth="500.0" prefHeight="100.0" prefWidth="340.0" styleClass="helpTiles" stylesheets="@style.css">
+                                       <children>
+                                          <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" StackPane.alignment="CENTER">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" styleClass="homeSelectTitles" stylesheets="@style.css" text="How to practice your speech:" textAlignment="CENTER" />
+                                                <Label alignment="CENTER" contentDisplay="CENTER" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="learn how to play practice rounds and become a better Maori speaker" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane fx:id="helpPane3" maxWidth="500.0" prefHeight="158.0" prefWidth="340.0" styleClass="helpTiles" stylesheets="@style.css">
+                                       <children>
+                                          <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" StackPane.alignment="CENTER">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" styleClass="homeSelectTitles" stylesheets="@style.css" text="How to make a custom game:" textAlignment="CENTER" />
+                                                <Label alignment="CENTER" contentDisplay="CENTER" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="learn how to make your own custom game to play in the future!" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane fx:id="helpPane4" maxWidth="500.0" prefHeight="100.0" prefWidth="340.0" styleClass="helpTiles" stylesheets="@style.css">
+                                       <children>
+                                          <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" StackPane.alignment="CENTER">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" styleClass="homeSelectTitles" stylesheets="@style.css" text="How to play a custom game:" textAlignment="CENTER" />
+                                                <Label alignment="CENTER" contentDisplay="CENTER" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="learn how to play custom games previously created by you!" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane fx:id="helpPane5" maxWidth="500.0" prefHeight="100.0" prefWidth="340.0" styleClass="helpTiles" stylesheets="@style.css">
+                                       <children>
+                                          <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" StackPane.alignment="CENTER">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" styleClass="homeSelectTitles" stylesheets="@style.css" text="How to view your statistics:" textAlignment="CENTER" />
+                                                <Label alignment="CENTER" contentDisplay="CENTER" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="learn how to check your game stats, and see who has the highest score!" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane fx:id="helpPane6" maxWidth="500.0" prefHeight="100.0" prefWidth="340.0" styleClass="helpTiles" stylesheets="@style.css">
+                                       <children>
+                                          <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" StackPane.alignment="CENTER">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" styleClass="homeSelectTitles" stylesheets="@style.css" text="How earn badges:" textAlignment="CENTER" />
+                                                <Label alignment="CENTER" contentDisplay="CENTER" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="learn how to earn badges and start your Tatai badge collection" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane fx:id="helpPane7" maxWidth="500.0" prefHeight="100.0" prefWidth="340.0" styleClass="helpTiles" stylesheets="@style.css">
+                                       <children>
+                                          <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" StackPane.alignment="CENTER">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" styleClass="homeSelectTitles" stylesheets="@style.css" text="How to view your badges:" textAlignment="CENTER" />
+                                                <Label alignment="CENTER" contentDisplay="CENTER" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="learn how to check your badge collection" textAlignment="CENTER" wrapText="true" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                       <TilePane.margin>
+                                          <Insets />
+                                       </TilePane.margin>
+                                    </StackPane>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="150.0" />
+                                 </HBox.margin>
+                              </TilePane>
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </HBox>
+                     </content>
+                  </ScrollPane>
+                  <Pane maxHeight="115.0" nodeOrientation="LEFT_TO_RIGHT" styleClass="frontWave" stylesheets="@style.css" StackPane.alignment="BOTTOM_CENTER" />
+               </children>
+            </StackPane>
+         </children>
+      </VBox>
+      <Pane fx:id="helpPane" disable="true" prefHeight="364.0" prefWidth="1097.0" style="-fx-background-color: black; -fx-opacity: 0.2;" visible="false" />
+      <VBox fx:id="helpBox" alignment="CENTER" disable="true" maxHeight="600.0" maxWidth="500.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.35), 6, 0.0, 0, 1);" visible="false" StackPane.alignment="CENTER">
+         <children>
+            <Label fx:id="helpBoxTitle" alignment="CENTER" prefHeight="70.0" prefWidth="500.0" styleClass="homeSelectTitles" stylesheets="@style.css" text="How to start a new game" />
+            <TextArea fx:id="helpBoxText" editable="false" maxWidth="415.0" prefHeight="461.0" prefWidth="415.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="Navigate to the home page by clicking the &quot;TATAI!&quot; logo atop of the window&#10;&#10;Click the &quot;play math round&quot; tile located on the top left of the window&#10;&#10;Select the type of math problems you wish to solve and click &quot;start&quot;!&#10;&#10;You will be prompted with math problems, solve them by pressing the record button and speaking the answer in Maori.&#10;&#10;&#10;&#10;" wrapText="true" />
+            <Button fx:id="dismissHelpBox" mnemonicParsing="false" prefHeight="43.0" prefWidth="111.0" styleClass="startMath" stylesheets="@style.css" text="dismiss" />
+         </children>
+      </VBox>
+   </children>
+</StackPane>

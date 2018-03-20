@@ -1,0 +1,17 @@
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+.idea/
+SOFTENG206.iml
+target/*
+jfxrt\.jar
+logo2\.png
+
+_gitignore
+
+_travis\.yml
+
+mockup/
+/target/

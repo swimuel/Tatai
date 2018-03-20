@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="506.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane prefHeight="657.0" prefWidth="506.0">
+         <children>
+            <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="517.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" style="-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.1) , 5, 0.0 , 0 ,3 );" width="410.0" />
+            <Label fx:id="scoreLabel" alignment="CENTER" prefHeight="170.0" prefWidth="335.0" styleClass="finalScore" stylesheets="@style.css">
+               <font>
+                  <Font size="96.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="25.0" />
+               </StackPane.margin>
+            </Label>
+            <Label alignment="CENTER" layoutX="96.0" layoutY="101.0" prefHeight="100.0" prefWidth="335.0" styleClass="finalScoreTitle" stylesheets="@style.css" text="FINAL SCORE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets bottom="350.0" />
+               </StackPane.margin>
+            </Label>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="351.0">
+               <StackPane.margin>
+                  <Insets top="380.0" />
+               </StackPane.margin>
+               <children>
+                  <JFXButton id="recordButton" fx:id="homeButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" prefHeight="69.0" prefWidth="153.0" styleClass="finalScoreButtons" stylesheets="@style.css" text="home" textFill="WHITE" />
+                  <Region prefHeight="111.0" prefWidth="45.0" />
+                  <JFXButton fx:id="nextLevelButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" prefHeight="69.0" prefWidth="153.0" styleClass="finalScoreButtons" stylesheets="@style.css" text="Level 2" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+   </children>
+</VBox>

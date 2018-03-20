@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Region prefHeight="23.0" prefWidth="550.0" />
+      <Label alignment="CENTER" prefHeight="62.0" prefWidth="232.0" styleClass="homeSelectTitles" stylesheets="@style.css" text="How to ___" />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="262.0" styleClass="homeSelectTitles" stylesheets="@style.css" text="Lorem ipsum: ">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="165.0" fitWidth="127.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/question.png" />
+               </image>
+            </ImageView>
+            <Region prefHeight="165.0" prefWidth="26.0" />
+            <ImageView fitHeight="165.0" fitWidth="127.0" layoutX="222.0" layoutY="10.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/question.png" />
+               </image>
+            </ImageView>
+            <Region layoutX="272.0" layoutY="10.0" prefHeight="165.0" prefWidth="26.0" />
+            <ImageView fitHeight="165.0" fitWidth="127.0" layoutX="298.0" layoutY="10.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/question.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="127.0" prefHeight="78.0" prefWidth="568.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." textAlignment="CENTER" wrapText="true" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="104.0" prefHeight="48.0" prefWidth="298.0" styleClass="homeSelectTitles" stylesheets="@style.css" text="Sed ut perspiciatis:" />
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="169.0" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="165.0" fitWidth="127.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/chooseName.png" />
+               </image>
+            </ImageView>
+            <Region prefHeight="165.0" prefWidth="26.0" />
+            <ImageView fitHeight="165.0" fitWidth="127.0" layoutX="222.0" layoutY="10.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/chooseName.png" />
+               </image>
+            </ImageView>
+            <Region layoutX="272.0" layoutY="10.0" prefHeight="165.0" prefWidth="26.0" />
+            <ImageView fitHeight="165.0" fitWidth="127.0" layoutX="298.0" layoutY="10.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/chooseName.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="334.0" prefHeight="78.0" prefWidth="568.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." textAlignment="CENTER" wrapText="true" />
+   </children>
+</VBox>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="mainBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="250.0" style="-fx-background-color: #FAFAFA;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softeng206.tatai.DrawerController">
+   <children>
+      <Label alignment="CENTER" styleClass="menuHeader" stylesheets="@style.css" text="MENU" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets left="85.0" top="20.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="30.0" />
+         </padding>
+      </Label>
+      <JFXButton fx:id="homeButton" prefHeight="120.0" prefWidth="250.0" styleClass="drawerButton" stylesheets="@style.css" text="home" />
+      <JFXButton fx:id="helpButton" prefHeight="120.0" prefWidth="250.0" styleClass="drawerButton" stylesheets="@style.css" text="help" />
+      <JFXButton fx:id="statsButton" prefHeight="120.0" prefWidth="250.0" styleClass="drawerButton" stylesheets="@style.css" text="stats" />
+      <JFXButton fx:id="quitButton" layoutX="10.0" layoutY="282.0" prefHeight="120.0" prefWidth="250.0" styleClass="drawerButton" stylesheets="@style.css" text="quit" />
+      <HBox fx:id="confirmBox" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <JFXButton fx:id="yesButton" prefHeight="120.0" prefWidth="125.0" styleClass="confirmButon" stylesheets="@style.css" text="yes" />
+            <JFXButton fx:id="cancelButton" prefHeight="120.0" prefWidth="125.0" styleClass="cancelButon" stylesheets="@style.css" text="cancel" />
+         </children>
+      </HBox>
+      <Region prefHeight="30.0" prefWidth="250.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="13.0" prefWidth="250.0" text="Made by C Rillstone &amp; S Broadhead" textAlignment="CENTER">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="20.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>

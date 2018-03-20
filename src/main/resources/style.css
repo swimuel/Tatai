@@ -1,0 +1,487 @@
+@font-face {
+    font-family: theboldfont;
+    src: url('fonts/theboldfont.ttf');
+}
+@font-face {
+    font-family: Natsu;
+    src: url('fonts/Natsu.ttf');
+}
+@font-face {
+    font-family: PierSans-Medium;
+    src: url('fonts/PierSans-Medium.ttf');
+}
+@font-face {
+    font-family: PierSans-Regular;
+    src: url('fonts/PierSans-Regular.ttf');
+}
+.radio-button .radio {
+    -fx-border-width: 2px;
+    -fx-border-color: white;
+    -fx-background-color: #43ACFF;
+    -fx-background-image: null;
+    -fx-border-radius: 15px;
+    -fx-padding: 4px;
+}
+.radio-button .radio:selected {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button {
+    -fx-font-size: 17;
+}
+.radio-button .dot {
+    -fx-mark-color: white;
+    -fx-background-radius: 15px;
+    -fx-padding: 3.5px;
+}
+.table-view {
+    -fx-table-color: rgba(82, 100, 174, 0.4);
+    -fx-table-rippler-color: rgba(82, 100, 174, 0.6);
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.19), 8.4525, 0.17, 3.0, 1.0);
+    -fx-background-radius: 6;
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: -1.4, 0, 1;
+    -fx-background-radius: 6;
+    -fx-padding: 0;
+}
+.table-view:focused {
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: -1.4, 0, 1;
+    -fx-background-radius: 6;
+    -fx-padding: 0;
+}
+.table-view:focused .table-row-cell:selected {
+    -fx-background-color: #33b5e5;
+    -fx-table-cell-border-color: #FAFAFA;
+    -fx-text-fill: BLACK;
+}
+.table-view:focused .table-row-cell:selected .table-cell {
+    -fx-text-fill: BLACK;
+}
+.table-view .column-header,
+.table-view .column-header-background,
+.table-view .column-header-background .filler {
+    -fx-background-color: TRANSPARENT;
+}
+.table-view .column-header {
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: #FAFAFA;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #37474f;
+    -fx-padding: 16 0 16 0;
+}
+.table-view .column-header .arrow,
+.table-view .column-header .sort-order-dot {
+    -fx-background-color: #949494;
+}
+.table-view .column-header:last-visible {
+    -fx-border-width: 0 0 0 0;
+}
+.table-view .column-header-background {
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: #FAFAFA;
+}
+.table-view .table-cell {
+    -fx-border-width: 0 0 0 0;
+    -fx-padding: 16 0 16 0;
+    -fx-alignment: top-center;
+}
+.table-view .scroll-bar:vertical .increment-button,
+.table-view .scroll-bar:vertical .decrement-button {
+    -fx-padding: 0;
+}
+.table-view .column-overlay {
+    -fx-background-color: #33b5e5;
+}
+.table-view .column-resize-line,
+.table-view .column-drag-header {
+    -fx-background-color: #FFFFFF;
+}
+.table-row-cell > .tree-disclosure-node > .arrow {
+    -fx-background-color: -fx-text-fill;
+    -fx-padding: 0.333333em 0.229em 0.333333em 0.229em;
+    -fx-shape: "M 0 -3.5 L 4 0 L 0 3.5 z";
+}
+.table-row-cell .jfx-text-field {
+    -fx-focus-color: #33b5e5;
+}
+.table-row-cell .jfx-text-field:error {
+    -jfx-focus-color: #D34336;
+    -jfx-unfocus-color: #D34336;
+}
+.table-row-cell .jfx-text-field .error-label {
+    -fx-text-fill: #37474f;
+    -fx-font-size: 0.75em;
+}
+.table-row-cell .jfx-text-field .error-icon {
+    -fx-fill: #37474f;
+    -fx-font-size: 1.0em;
+}
+.table-row-group {
+    -fx-background-color: rgb(230, 230, 230);
+}
+.table-view .menu-item:focused {
+    -fx-background-color: #33b5e5;
+}
+.table-view .menu-item .label {
+    -fx-padding: 5 0 5 0;
+}
+.split-pane *.split-pane-divider {
+    -fx-padding: 0;
+    -fx-background-color: TRANSPARENT;
+    -fx-background-insets: 0;
+    -fx-shape: " ";
+}
+.label .scroll-bar:vertical .increment-arrow,
+.label .scroll-bar:vertical .decrement-arrow,
+.label .scroll-bar:vertical .increment-button,
+.label .scroll-bar:vertical .decrement-button {
+    -fx-padding: 0;
+}
+.scroll-pane {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+.scroll-pane:focused {
+    -fx-background-insets: 0;
+}
+.scroll-pane .corner {
+    -fx-background-insets: 0;
+}
+.scroll-pane .scroll-bar:vertical .increment-arrow,
+.scroll-pane .scroll-bar:vertical .decrement-arrow,
+.scroll-pane .scroll-bar:vertical .increment-button,
+.scroll-pane .scroll-bar:vertical .decrement-button {
+    -fx-padding: 0;
+}
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: #F4f4f4;
+    -fx-border-color: #F4f4f4;
+    -fx-background-radius: 10em;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: white;
+    -fx-background-radius: 10em;
+}
+.boxTest {
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.1), 3, 0.0, 0, 3);
+}
+.boxTest:hover {
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.2), 7, 0.0, 0, 3);
+}
+.recordButton {
+    -fx-background-radius: 360;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.3), 7, 0.0, 0, 1);
+}
+.finalScoreButtons {
+    -fx-background-color: #1DE97E;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.2), 6, 0.0, 0, 1);
+}
+.currentTest {
+    -fx-text-fill: #37474F;
+    -fx-font-family: "The Bold Font";
+    -fx-font-size: 100;
+}
+.currentTestMedium {
+    -fx-text-fill: #37474F;
+    -fx-font-family: "The Bold Font";
+    -fx-font-size: 70;
+}
+.currentTestSmall {
+    -fx-text-fill: #37474F;
+    -fx-font-family: "The Bold Font";
+    -fx-font-size: 50;
+}
+.currentTestTiny {
+    -fx-text-fill: #37474F;
+    -fx-font-family: "The Bold Font";
+    -fx-font-size: 30;
+}
+.homeSelectTitles {
+    -fx-font-family: "PierSans-Medium";
+    -fx-text-fill: #37474F;
+    -fx-font-size: 21;
+}
+.homeSelectSubTitles {
+    -fx-font-family: "PierSans-Regular";
+    -fx-text-fill: #37474F;
+    -fx-font-weight: normal;
+    -fx-font-size: 18;
+}
+.finalScore {
+    -fx-font-family: "The Bold Font";
+    -fx-font-size: 160;
+}
+.finalScoreBackground {
+    -fx-background-image: url("image/backScatter_nobackground.png");
+    -fx-background-repeat: space;
+    -fx-background-size: 100%;
+    -fx-background-position: center center;
+}
+.logoTitle {
+     -fx-font-family: "Natsu";
+     -fx-font-size: 100;
+     -fx-text-fill: #37474F;
+ }
+.logoTitleHomeNoHover {
+    -fx-font-family: "Natsu";
+    -fx-font-size: 90;
+    -fx-text-fill: #43ACFF;
+}
+.logoTitleHome {
+    -fx-font-family: "Natsu";
+    -fx-font-size: 90;
+    -fx-text-fill: #43ACFF;
+}
+
+.logoTitleHome:hover, .logoTitleGame:hover {
+    -fx-text-fill: #3a92d8;
+}
+.logoSubTitle {
+    -fx-font-family: "The Bold Font";
+    -fx-font-size: 23;
+    -fx-text-fill: #37474F;
+}
+.logoTitleGame{
+    -fx-font-family: "Natsu";
+    -fx-font-size: 70;
+    -fx-text-fill: #43ACFF;
+}
+.logoSubTitleGame {
+    -fx-font-family: "The Bold Font";
+    -fx-font-size: 18;
+    -fx-text-fill: #37474F;
+}
+.logoSubTitleTwo {
+    -fx-font-family: "The Bold Font";
+    -fx-font-size: 27;
+    -fx-text-fill: #37474F;
+}
+.splashBorderPane {
+    -fx-background-image: url("image/fullBackground_noBackground.png");
+    -fx-background-repeat: space;
+    -fx-background-size: 100%;
+    -fx-background-position: center center;
+}
+.startButton {
+    -fx-font-size: 14px;
+    -fx-background-color: #43ACFF;
+    -fx-text-fill: WHITE;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.3), 6, 0.0, 0, 1);
+}
+.startButton:hover {
+    -fx-background-color: #35a0f4;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.4), 7, 0.0, 0, 1);
+}
+.startButton:disabled {
+    -fx-background-color: #cbd4db;
+    /*-fx-opacity: 0.7;*/
+}
+.homePane {
+    -fx-background-image: url("image/backgroundImage.png");
+    -fx-background-repeat: space;
+    -fx-background-size: cover;
+    -fx-background-position: center top;
+}
+.frontWave {
+    -fx-background-image: url("image/frontLayer_nobackgroundCropped.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: cover;
+    -fx-background-position: bottom center;
+}
+.backWave {
+    -fx-background-image: url("image/backLayer.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100%;
+    -fx-background-position: top center;
+}
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.menuTiles {
+    -fx-fill: white;
+    -fx-stroke: transparent;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.15), 8.4525, 0.17, 3.0, 3.0);
+}
+.menuTiles:hover {
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.25), 8.4525, 0.17, 3.0, 3.0);
+}
+.statsMenuLeft {
+    -fx-background-radius: 15 0 0 15;
+    -fx-background-color: #43ACFF;
+}
+.statsMenuRight {
+    -fx-background-radius: 0 15 15 0;
+    -fx-background-color: #43ACFF;
+}
+.statsMenuLeft:hover, .statsMenuRight:hover {
+    -fx-background-color: #35a0f4;
+}
+.statsSelectTitles {
+    -fx-font-family: "PierSans-Medium";
+    -fx-text-fill: #37474F;
+    -fx-font-size: 20;
+}
+.titleClass {
+    -fx-font-family: "PierSans-Medium";
+    -fx-text-fill: #37474F;
+    -fx-font-size: 30;
+}
+.speechQuestionPane {
+    -fx-background-image: url("image/fullBackground_noBackground.png");
+    -fx-background-repeat: space;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+.text-field {
+    -fx-font-family: "PierSans-Regular";
+    -fx-font-size: 20;
+    -fx-background-color: white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.19), 8.4525, 0.17, 3.0, 3.0);
+}
+.text-field:focused {
+    -fx-opacity: 1;
+    -fx-background-color: white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+.errorText {
+    -fx-text-fill: #E53935;
+    -fx-font-family: "PierSans-Regular";
+    -fx-font-size: 14;
+}
+.customGameButton {
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.15), 6, 0.0, 0, 1);
+}
+.customGameButton:hover {
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.3), 6, 0.0, 0, 1);
+}
+.mathButton:disabled {
+    -fx-opacity: 0.8;
+}
+.mathButton:selected {
+    -fx-opacity: 0.3;
+}
+.mathButton {
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.19), 8.4525, 0.17, 3.0, 3.0);
+}
+.favGame {
+    -fx-font-family: "PierSans-Medium";
+    -fx-text-fill: #37474F;
+    -fx-font-size: 24;
+}
+.favGameTile {
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.1),3,0.0,0,3);
+    -fx-background-color: white;
+    -fx-background-radius: 6;
+}
+.favGameTile:hover {
+    -fx-background-color: #F4f4f4;
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.3),3,0.0,2,3);
+}
+.favGameButtons {
+    -fx-background-radius: 360;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.15), 6, 0.0, 0, 1);
+}
+.recordSquare {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.1) , 3, 0.0 , 0 ,3 );
+    -fx-fill: white;
+}
+.recordSquareCorrect {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.1) , 3, 0.0 , 0 ,3 );
+    -fx-fill: #1DE97E;
+}
+.recordSquareIncorrect {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.1) , 3, 0.0 , 0 ,3 );
+    -fx-fill: #E53935;
+}
+.startMath {
+    -fx-font-size: 14px;
+    -jfx-button-type: FLAT;
+    -fx-background-color: #43ACFF;
+    -fx-text-fill: WHITE;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.2), 6, 0.0, 0, 1);
+}
+.cancelMath {
+    -fx-font-size: 14px;
+    -jfx-button-type: FLAT;
+    -fx-background-color: #d8d8d8;
+    -fx-text-fill: WHITE;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.2), 6, 0.0, 0, 1);
+}
+.startMath:hover, .cancelMath:hover {
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.35), 6, 0.0, 0, 1);
+}
+.badgeText {
+    -fx-font-family: "PierSans-Regular";
+    -fx-text-fill: #37474F;
+    -fx-font-size: 15;
+}
+.badgeNotificationTitle {
+    -fx-font-family: "PierSans-Medium";
+    -fx-text-fill: #37474F;
+    -fx-font-size: 20;
+}
+.text-area {
+    -fx-background-insets: 0;
+    -fx-background-color: transparent, white, transparent, white;
+}
+.text-area .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+.text-area:focused .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+.text-area:focused {
+    -fx-highlight-fill: #7ecfff;
+}
+.text-area .content {
+    -fx-padding: 10px;
+    -fx-text-fill: gray;
+    -fx-highlight-fill: #7ecfff;
+}
+.homeDialogButton {
+    -fx-font-size: 14px;
+    -fx-background-color: WHITE;
+    -fx-text-fill: #37474f;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.2), 6, 0.0, 0, 1);
+}
+.homeDialogHeader {
+    -fx-font-family: "PierSans-Medium";
+    -fx-text-fill: White;
+    -fx-font-size: 30;
+}
+.helpTiles {
+    -fx-background-color: white;
+    -fx-stroke: transparent;
+    -fx-background-radius: 6;
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.15), 8.4525, 0.17, 3.0, 3.0);
+}
+.helpTiles:hover {
+    -fx-effect: dropshadow( three-pass-box, rgba(0, 0, 0, 0.25), 8.4525, 0.17, 3.0, 3.0);
+}
+   .choice-box .context-menu { -fx-background-color: #7fc3f9; }
+
+   .choice-box .menu-item:focused { -fx-background-color: white; }
+
+   .choice-box .menu-item > .label { -fx-text-fill: white; }
+
+   .choice-box .menu-item:focused > .label { -fx-text-fill: #43ACFF; }
+.choice-box {
+    -fx-background-color: #43ACFF;
+    -fx-mark-color: white; // arrow color
+}
+.helpIcon {
+}
+.helpIcon:hover {
+    -fx-opacity: 0.4;
+}
+.choice-box > .label { -fx-text-fill: white; }

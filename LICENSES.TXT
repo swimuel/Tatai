@@ -1,0 +1,27 @@
+*LICENSES & ATTRIBUTIONS*
+
+==================== BADGES & ICONS ==========================
+
+- "Sport Achievment Badges" By Laura Reen http://laurareen.com/
+   License: Creative Commons (Attribution-Noncommercial 3.0 Unported)
+
+- "Google Material Design Icons" By Google https://material.io/icons
+   License: Apache License Version 2.0
+
+======================== FONTS ===============================
+
+- "Natsu" By Ezeqviel Ergo https://www.behance.net/ergohiki
+   Non-Commercial use
+
+- "PierSans" By Mathieu Desjardins https://www.behance.net/MathieuDesjardins
+   Non-Commercial use
+
+- "The Bold Font" By SVEN PELS http://svenpels.tumblr.com/
+   Non-Commercial use
+
+==================== Java Libraries ==========================
+
+- ControlsFX By fxexperience http://fxexperience.com/controlsfx/
+  Open Source license 
+  
+  ============================================================

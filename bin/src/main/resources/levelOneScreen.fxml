@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softeng206.tatai.LevelController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="506.0" style="-fx-background-color: #FAFAFA;">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="41.0" prefWidth="506.0" />
+            <HBox prefHeight="111.0" prefWidth="506.0">
+               <children>
+                  <Region prefHeight="111.0" prefWidth="38.0" />
+                  <VBox prefHeight="111.0" prefWidth="342.0">
+                     <children>
+                        <Label prefHeight="59.0" prefWidth="350.0" styleClass="logoTitle" stylesheets="@style.css" text="TE KEMU TAU">
+                           <font>
+                              <Font size="46.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="19.0" prefWidth="360.0" styleClass="logoSubTitle" stylesheets="@style.css" text="MATHEMATICS LEARNING MODULE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="6.0" top="-16.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="423.0" prefWidth="426.0">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </VBox.margin>
+               <children>
+                  <StackPane prefHeight="422.0" prefWidth="426.0" styleClass="boxTest" stylesheets="@style.css">
+                     <children>
+                        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="WHITE" height="363.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="426.0" StackPane.alignment="TOP_CENTER">
+                           <StackPane.margin>
+                              <Insets top="5.0" />
+                           </StackPane.margin>
+                        </Rectangle>
+                        <VBox prefHeight="423.0" prefWidth="426.0">
+                           <children>
+                              <Region prefHeight="42.0" prefWidth="426.0" />
+                              <Label fx:id="numberTested" alignment="CENTER" prefHeight="203.0" prefWidth="426.0" styleClass="currentTest" stylesheets="@style.css">
+                              </Label>
+                              <Region prefHeight="9.0" prefWidth="426.0" />
+                              <HBox maxHeight="-Infinity" prefHeight="19.0" prefWidth="426.0">
+                                 <children>
+                                    <Circle fx:id="indicator1" fill="#bfbfbf" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets left="135.0" />
+                                       </HBox.margin>
+                                    </Circle>
+                                    <Circle fx:id="indicator2" fill="#bfbfbf" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Circle>
+                                    <Circle fx:id="indicator3" fill="#bfbfbf" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Circle>
+                                    <Circle fx:id="indicator4" fill="#bfbfbf" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Circle>
+                                    <Circle fx:id="indicator5" fill="#bfbfbf" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Circle>
+                                    <Circle fx:id="indicator6" fill="#bfbfbf" radius="6.0" stroke="#33b5e5" strokeType="INSIDE" strokeWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Circle>
+                                    <Circle fx:id="indicator7" fill="#bfbfbf" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Circle>
+                                    <Circle fx:id="indicator8" fill="#bfbfbf" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Circle>
+                                    <Circle fx:id="indicator9" fill="#bfbfbf" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Circle>
+                                    <Circle fx:id="indicator10" fill="#bfbfbf" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                    </Circle>
+                                 </children>
+                              </HBox>
+                              <Region maxHeight="-Infinity" prefHeight="82.0" prefWidth="426.0" />
+                              <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="426.0" style="-fx-background-color: #33b5e5;" styleClass="recordButton" stylesheets="@style.css" text="record" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <Rectangle fx:id="recordingView" arcHeight="15.0" arcWidth="15.0" fill="#33b5e5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="426.0" StackPane.alignment="BOTTOM_CENTER" />
+                        <VBox fx:id="recordingInfoBox" prefHeight="200.0" prefWidth="100.0" visible="false">
+                           <children>
+                              <Region maxHeight="-Infinity" prefHeight="15.0" prefWidth="426.0" />
+                              <StackPane alignment="TOP_CENTER" maxWidth="-Infinity" prefHeight="58.0" prefWidth="107.0">
+                                 <children>
+                                    <Circle fill="WHITE" radius="37.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="boxTest" />
+                                    <Label fx:id="numberToRecord" alignment="CENTER" prefHeight="79.0" prefWidth="32.0" styleClass="currentTestCorner1" stylesheets="@style.css">
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                              <Region prefHeight="55.0" prefWidth="426.0" />
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="recordingStatus" alignment="CENTER" contentDisplay="CENTER" prefHeight="137.0" prefWidth="429.0" styleClass="recordStatus" stylesheets="@style.css" textFill="WHITE">
+                              </Label>
+                                    <JFXSpinner fx:id="spinner" visible="false" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="correctAnswerLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="426.0" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+                              <Region prefHeight="17.0" prefWidth="426.0" />
+                              <HBox fx:id="resultButtonHbox" alignment="CENTER" prefHeight="68.0" prefWidth="426.0" visible="false">
+                                 <children>
+                                    <JFXButton fx:id="playbackButton" alignment="CENTER" prefHeight="82.0" prefWidth="126.0" ripplerFill="#ffffff" style="-fx-background-color: transparent;" styleClass="resultButtons" stylesheets="@style.css" text="play" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font></JFXButton>
+                                    <Region prefHeight="82.0" prefWidth="109.0" />
+                                    <JFXButton fx:id="hideInfoButton" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="126.0" ripplerFill="#ffffff" style="-fx-background-color: transparent;" styleClass="resultButtons" stylesheets="@style.css" text="close" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font></JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <StackPane fx:id="dialogPane" disable="true" prefHeight="629.0" prefWidth="506.0" visible="false" />
+   </children>
+</AnchorPane>

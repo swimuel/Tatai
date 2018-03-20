@@ -1,0 +1,10 @@
+#! /bin/bash
+if [[ -e "MaoriNumbers/.recout.mlf" ]]; then
+	rm MaoriNumbers/.recout.mlf
+fi
+if [[ -e "MaoriNumbers/.sound.wav" ]]; then
+	rm MaoriNumbers/.sound.wav
+fi
+ffmpeg -f alsa -i hw:0 -t 3 -acodec pcm_s16le -ar 22050 -ac 1 MaoriNumbers/.sound.wav
+HVite -H MaoriNumbers/HMMs/hmm15/macros -H MaoriNumbers/HMMs/hmm15/hmmdefs -C MaoriNumbers/user/configLR  -w MaoriNumbers/user/wordNetworkNum -o SWT -l '*' -i MaoriNumbers/.recout.mlf -p 0.0 -s 5.0  MaoriNumbers/user/dictionaryD MaoriNumbers/user/tiedList MaoriNumbers/.sound.wav
+

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox styleClass="homePane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softeng206.tatai.controllers.GameCreatorController">
+   <children>
+      <StackPane VBox.vgrow="NEVER">
+         <children>
+            <Label fx:id="logo" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="289.0" styleClass="logoTitleHome" stylesheets="@style.css" text="Tatai!" StackPane.alignment="TOP_CENTER">
+               <StackPane.margin>
+                  <Insets bottom="7.0" />
+               </StackPane.margin>
+               <tooltip>
+                  <Tooltip text="Click to navigate home">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" styleClass="logoSubTitle" stylesheets="@style.css" text="Maori learning module" StackPane.alignment="BOTTOM_CENTER">
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </Label>
+         </children>
+      </StackPane>
+      <StackPane VBox.vgrow="ALWAYS">
+         <children>
+            <Pane layoutX="10.0" layoutY="496.0" maxHeight="160.0" prefHeight="181.0" prefWidth="1010.0" styleClass="backWave" stylesheets="@style.css" StackPane.alignment="BOTTOM_CENTER" />
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" prefHeight="758.0" prefWidth="1300.0" StackPane.alignment="TOP_CENTER">
+               <content>
+                  <HBox alignment="CENTER" prefHeight="1250.0" prefWidth="1301.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="1120.0" prefWidth="673.0" style="-fx-background-color: WHite; -fx-background-radius: 6;">
+                           <effect>
+                              <DropShadow color="#00000022" height="22.53" offsetX="2.0" offsetY="2.0" radius="9.6225" width="17.96" />
+                           </effect>
+                           <HBox.margin>
+                              <Insets top="18.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="93.0" prefWidth="687.0" styleClass="titleClass" stylesheets="@style.css" text="Custom Game" />
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Region prefHeight="41.0" prefWidth="82.0" />
+                                    <TextField fx:id="gameNameInput" maxWidth="500.0" prefHeight="41.0" prefWidth="500.0" promptText="custom game name" />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="23.0" />
+                                    <ImageView fx:id="nameVerify" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@icons/tick.png" />
+                                       </image>
+                                       <effect>
+                                          <ColorAdjust brightness="0.44" contrast="-1.0" hue="0.63" saturation="1.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Region prefHeight="10.0" prefWidth="673.0" />
+                              <Label fx:id="customNameError" prefHeight="16.0" prefWidth="494.0" styleClass="errorText" stylesheets="@style.css" text="Name already taken!" textFill="#e53935" visible="false" />
+                              <Region layoutX="10.0" layoutY="144.0" prefHeight="43.0" prefWidth="673.0" />
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="103.0">
+                                 <children>
+                                    <Region prefHeight="41.0" prefWidth="23.0" />
+                                    <Label prefHeight="24.0" prefWidth="22.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="1." />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="40.0" />
+                                    <TextField fx:id="q1VarA" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <ToggleButton fx:id="a1" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="+">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="q1" />
+                                       </toggleGroup>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="s1" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="-" toggleGroup="$q1" />
+                                    <ToggleButton fx:id="m1" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="x" toggleGroup="$q1" />
+                                    <ToggleButton fx:id="d1" layoutX="233.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="÷" toggleGroup="$q1" />
+                                    <TextField fx:id="q1VarB" layoutX="92.0" layoutY="10.0" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="160.0" />
+                                    <ImageView fx:id="verify1" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@icons/tick.png" />
+                                       </image>
+                                       <effect>
+                                          <ColorAdjust brightness="0.44" contrast="-1.0" hue="0.63" saturation="1.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Region layoutX="10.0" layoutY="144.0" prefHeight="10.0" prefWidth="673.0" />
+                              <Label fx:id="eqError1" layoutX="100.0" layoutY="154.0" prefHeight="16.0" prefWidth="494.0" styleClass="errorText" stylesheets="@style.css" text="Name already taken!" textFill="#e53935" visible="false" />
+                              <Region layoutX="10.0" layoutY="171.0" prefHeight="10.0" prefWidth="673.0" />
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="214.0">
+                                 <children>
+                                    <Region prefHeight="41.0" prefWidth="23.0" />
+                                    <Label prefHeight="24.0" prefWidth="22.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="2." />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="40.0" />
+                                    <TextField fx:id="q2VarA" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <ToggleButton fx:id="a2" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="+">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="q2" />
+                                       </toggleGroup>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="s2" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="-" toggleGroup="$q2" />
+                                    <ToggleButton fx:id="m2" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="x" toggleGroup="$q2" />
+                                    <ToggleButton fx:id="d2" layoutX="233.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="÷" toggleGroup="$q2" />
+                                    <TextField fx:id="q2VarB" layoutX="92.0" layoutY="10.0" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="160.0" />
+                                    <ImageView fx:id="verify2" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@icons/tick.png" />
+                                       </image>
+                                       <effect>
+                                          <ColorAdjust brightness="0.44" contrast="-1.0" hue="0.63" saturation="1.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Region layoutX="10.0" layoutY="255.0" prefHeight="10.0" prefWidth="673.0" />
+                              <Label fx:id="eqError2" layoutX="100.0" layoutY="265.0" prefHeight="16.0" prefWidth="494.0" styleClass="errorText" stylesheets="@style.css" text="Name already taken!" textFill="#e53935" visible="false" />
+                              <Region layoutX="10.0" layoutY="282.0" prefHeight="10.0" prefWidth="673.0" />
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="255.0">
+                                 <children>
+                                    <Region prefHeight="41.0" prefWidth="23.0" />
+                                    <Label prefHeight="24.0" prefWidth="22.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="3." />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="40.0" />
+                                    <TextField fx:id="q3VarA" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <ToggleButton fx:id="a3" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="+">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="q3" />
+                                       </toggleGroup>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="s3" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="-" toggleGroup="$q3" />
+                                    <ToggleButton fx:id="m3" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="x" toggleGroup="$q3" />
+                                    <ToggleButton fx:id="d3" layoutX="233.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="÷" toggleGroup="$q3" />
+                                    <TextField fx:id="q3VarB" layoutX="92.0" layoutY="10.0" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="160.0" />
+                                    <ImageView fx:id="verify3" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@icons/tick.png" />
+                                       </image>
+                                       <effect>
+                                          <ColorAdjust brightness="0.44" contrast="-1.0" hue="0.63" saturation="1.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Region layoutX="10.0" layoutY="333.0" prefHeight="10.0" prefWidth="673.0" />
+                              <Label fx:id="eqError3" layoutX="100.0" layoutY="343.0" prefHeight="16.0" prefWidth="494.0" styleClass="errorText" stylesheets="@style.css" text="Name already taken!" textFill="#e53935" visible="false" />
+                              <Region layoutX="10.0" layoutY="360.0" prefHeight="10.0" prefWidth="673.0" />
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="296.0">
+                                 <children>
+                                    <Region prefHeight="41.0" prefWidth="23.0" />
+                                    <Label prefHeight="24.0" prefWidth="22.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="4." />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="40.0" />
+                                    <TextField fx:id="q4VarA" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <ToggleButton fx:id="a4" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="+">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="q4" />
+                                       </toggleGroup>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="s4" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="-" toggleGroup="$q4" />
+                                    <ToggleButton fx:id="m4" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="x" toggleGroup="$q4" />
+                                    <ToggleButton fx:id="d4" layoutX="233.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="÷" toggleGroup="$q4" />
+                                    <TextField fx:id="q4VarB" layoutX="92.0" layoutY="10.0" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="160.0" />
+                                    <ImageView fx:id="verify4" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@icons/tick.png" />
+                                       </image>
+                                       <effect>
+                                          <ColorAdjust brightness="0.44" contrast="-1.0" hue="0.63" saturation="1.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Region layoutX="10.0" layoutY="411.0" prefHeight="10.0" prefWidth="673.0" />
+                              <Label fx:id="eqError4" layoutX="100.0" layoutY="421.0" prefHeight="16.0" prefWidth="494.0" styleClass="errorText" stylesheets="@style.css" text="Name already taken!" textFill="#e53935" visible="false" />
+                              <Region layoutX="10.0" layoutY="438.0" prefHeight="10.0" prefWidth="673.0" />
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="214.0">
+                                 <children>
+                                    <Region prefHeight="41.0" prefWidth="23.0" />
+                                    <Label prefHeight="24.0" prefWidth="22.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="5." />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="40.0" />
+                                    <TextField fx:id="q5VarA" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <ToggleButton fx:id="a5" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="+">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="q5" />
+                                       </toggleGroup>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="s5" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="-" toggleGroup="$q5" />
+                                    <ToggleButton fx:id="m5" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="x" toggleGroup="$q5" />
+                                    <ToggleButton fx:id="d5" layoutX="233.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="÷" toggleGroup="$q5" />
+                                    <TextField fx:id="q5VarB" layoutX="92.0" layoutY="10.0" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="160.0" />
+                                    <ImageView fx:id="verify5" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@icons/tick.png" />
+                                       </image>
+                                       <effect>
+                                          <ColorAdjust brightness="0.44" contrast="-1.0" hue="0.63" saturation="1.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Region layoutX="10.0" layoutY="255.0" prefHeight="10.0" prefWidth="673.0" />
+                              <Label fx:id="eqError5" layoutX="100.0" layoutY="265.0" prefHeight="16.0" prefWidth="494.0" styleClass="errorText" stylesheets="@style.css" text="Name already taken!" textFill="#e53935" visible="false" />
+                              <Region layoutX="10.0" layoutY="282.0" prefHeight="10.0" prefWidth="673.0" />
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="292.0">
+                                 <children>
+                                    <Region prefHeight="41.0" prefWidth="23.0" />
+                                    <Label prefHeight="24.0" prefWidth="22.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="6." />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="40.0" />
+                                    <TextField fx:id="q6VarA" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <ToggleButton fx:id="a6" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="+">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="q6" />
+                                       </toggleGroup>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="s6" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="-" toggleGroup="$q6" />
+                                    <ToggleButton fx:id="m6" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="x" toggleGroup="$q6" />
+                                    <ToggleButton fx:id="d6" layoutX="233.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="÷" toggleGroup="$q6" />
+                                    <TextField fx:id="q6VarB" layoutX="92.0" layoutY="10.0" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="160.0" />
+                                    <ImageView fx:id="verify6" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@icons/tick.png" />
+                                       </image>
+                                       <effect>
+                                          <ColorAdjust brightness="0.44" contrast="-1.0" hue="0.63" saturation="1.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Region layoutX="10.0" layoutY="333.0" prefHeight="10.0" prefWidth="673.0" />
+                              <Label fx:id="eqError6" layoutX="100.0" layoutY="343.0" prefHeight="16.0" prefWidth="494.0" styleClass="errorText" stylesheets="@style.css" text="Name already taken!" textFill="#e53935" visible="false" />
+                              <Region layoutX="10.0" layoutY="360.0" prefHeight="10.0" prefWidth="673.0" />
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="370.0">
+                                 <children>
+                                    <Region prefHeight="41.0" prefWidth="23.0" />
+                                    <Label prefHeight="24.0" prefWidth="22.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="7." />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="40.0" />
+                                    <TextField fx:id="q7VarA" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <ToggleButton fx:id="a7" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="+">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="q7" />
+                                       </toggleGroup>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="s7" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="-" toggleGroup="$q7" />
+                                    <ToggleButton fx:id="m7" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="x" toggleGroup="$q7" />
+                                    <ToggleButton fx:id="d7" layoutX="233.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="÷" toggleGroup="$q7" />
+                                    <TextField fx:id="q7VarB" layoutX="92.0" layoutY="10.0" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="160.0" />
+                                    <ImageView fx:id="verify7" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@icons/tick.png" />
+                                       </image>
+                                       <effect>
+                                          <ColorAdjust brightness="0.44" contrast="-1.0" hue="0.63" saturation="1.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Region layoutX="10.0" layoutY="411.0" prefHeight="10.0" prefWidth="673.0" />
+                              <Label fx:id="eqError7" layoutX="100.0" layoutY="421.0" prefHeight="16.0" prefWidth="494.0" styleClass="errorText" stylesheets="@style.css" text="Name already taken!" textFill="#e53935" visible="false" />
+                              <Region layoutX="10.0" layoutY="438.0" prefHeight="10.0" prefWidth="673.0" />
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="448.0">
+                                 <children>
+                                    <Region prefHeight="41.0" prefWidth="23.0" />
+                                    <Label prefHeight="24.0" prefWidth="22.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="8." />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="40.0" />
+                                    <TextField fx:id="q8VarA" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <ToggleButton fx:id="a8" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="+">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="q8" />
+                                       </toggleGroup>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="s8" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="-" toggleGroup="$q8" />
+                                    <ToggleButton fx:id="m8" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="x" toggleGroup="$q8" />
+                                    <ToggleButton fx:id="d8" layoutX="233.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="÷" toggleGroup="$q8" />
+                                    <TextField fx:id="q8VarB" layoutX="92.0" layoutY="10.0" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="160.0" />
+                                    <ImageView fx:id="verify8" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@icons/tick.png" />
+                                       </image>
+                                       <effect>
+                                          <ColorAdjust brightness="0.44" contrast="-1.0" hue="0.63" saturation="1.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Region layoutX="10.0" layoutY="489.0" prefHeight="10.0" prefWidth="673.0" />
+                              <Label fx:id="eqError8" layoutX="100.0" layoutY="499.0" prefHeight="16.0" prefWidth="494.0" styleClass="errorText" stylesheets="@style.css" text="Name already taken!" textFill="#e53935" visible="false" />
+                              <Region layoutX="10.0" layoutY="516.0" prefHeight="10.0" prefWidth="673.0" />
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="682.0">
+                                 <children>
+                                    <Region prefHeight="41.0" prefWidth="23.0" />
+                                    <Label prefHeight="24.0" prefWidth="22.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="9." />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="40.0" />
+                                    <TextField fx:id="q9VarA" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <ToggleButton fx:id="a9" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="+">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="q9" />
+                                       </toggleGroup>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="s9" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="-" toggleGroup="$q9" />
+                                    <ToggleButton fx:id="m9" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="x" toggleGroup="$q9" />
+                                    <ToggleButton fx:id="d9" layoutX="233.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="÷" toggleGroup="$q9" />
+                                    <TextField fx:id="q9VarB" layoutX="92.0" layoutY="10.0" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="160.0" />
+                                    <ImageView fx:id="verify9" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@icons/tick.png" />
+                                       </image>
+                                       <effect>
+                                          <ColorAdjust brightness="0.44" contrast="-1.0" hue="0.63" saturation="1.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Region layoutX="10.0" layoutY="723.0" prefHeight="10.0" prefWidth="673.0" />
+                              <Label fx:id="eqError9" layoutX="100.0" layoutY="733.0" prefHeight="16.0" prefWidth="494.0" styleClass="errorText" stylesheets="@style.css" text="Name already taken!" textFill="#e53935" visible="false" />
+                              <Region layoutX="10.0" layoutY="750.0" prefHeight="10.0" prefWidth="673.0" />
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="760.0">
+                                 <children>
+                                    <Region prefHeight="41.0" prefWidth="23.0" />
+                                    <Label prefHeight="24.0" prefWidth="22.0" styleClass="homeSelectSubTitles" stylesheets="@style.css" text="10." />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="40.0" />
+                                    <TextField fx:id="q10VarA" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <ToggleButton fx:id="a10" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="+">
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="q10" />
+                                       </toggleGroup>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="s10" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="-" toggleGroup="$q10" />
+                                    <ToggleButton fx:id="m10" layoutX="192.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="x" toggleGroup="$q10" />
+                                    <ToggleButton fx:id="d10" layoutX="233.0" layoutY="10.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="41.0" style="-fx-background-color: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.19) , 8.4525, 0.17 , 3.0 ,3.0 );;" styleClass="mathButton" stylesheets="@style.css" text="÷" toggleGroup="$q10" />
+                                    <TextField fx:id="q10VarB" layoutX="92.0" layoutY="10.0" maxWidth="500.0" prefHeight="41.0" prefWidth="100.0" />
+                                    <Region layoutX="10.0" layoutY="10.0" prefHeight="41.0" prefWidth="160.0" />
+                                    <ImageView fx:id="verify10" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                       <image>
+                                          <Image url="@icons/tick.png" />
+                                       </image>
+                                       <effect>
+                                          <ColorAdjust brightness="0.44" contrast="-1.0" hue="0.63" saturation="1.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <Region layoutX="10.0" layoutY="801.0" prefHeight="10.0" prefWidth="673.0" />
+                              <Label fx:id="eqError10" layoutX="100.0" layoutY="811.0" prefHeight="16.0" prefWidth="494.0" styleClass="errorText" stylesheets="@style.css" text="Name already taken!" textFill="#e53935" visible="false" />
+                              <Region layoutX="10.0" layoutY="828.0" prefHeight="46.0" prefWidth="673.0" />
+                              <HBox alignment="CENTER" prefHeight="48.0" prefWidth="673.0">
+                                 <children>
+                                    <Button fx:id="addGameButton" mnemonicParsing="false" prefHeight="48.0" prefWidth="100.0" style="-fx-background-color: #43ACFF;" styleClass="customGameButton" stylesheets="@style.css" text="add" textFill="WHITE" />
+                                    <Region prefHeight="26.0" prefWidth="38.0" />
+                                    <Button fx:id="cancelAddButton" layoutX="306.0" layoutY="10.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="100.0" style="-fx-background-color: white;" styleClass="customGameButton" stylesheets="@style.css" text="cancel" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+            <Pane maxHeight="115.0" prefHeight="164.0" prefWidth="1300.0" styleClass="frontWave" stylesheets="@style.css" StackPane.alignment="BOTTOM_CENTER" />
+         </children>
+      </StackPane>
+   </children>
+</VBox>
