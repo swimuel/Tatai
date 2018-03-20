@@ -1,3 +1,5 @@
+A project by Charlie Rillstone and Sam Broadhead for SOFTENG206. We do not own the **HTK** software.
+
 # Brief
 
 **Due Week 11 , 16th October 2017, 9 am**
